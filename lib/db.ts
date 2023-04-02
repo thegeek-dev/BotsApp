@@ -81,6 +81,12 @@ const data = {
         INVALID_THEME:
             "```Please enter a valid theme.\nDo note that theme names are```  *case sensitive*.",
     },
+    cgpt: {
+        DESCRIPTION: "Interact with ChatGPT",
+        EXTENDED_DESCRIPTION:
+            "```Use this module to interact with ChatGPT directly from WhatsApp. Enter your question with command```  *.cgpt*",
+        NO_PROMPT: "```No arguments supplied. Use``` *.cgpt help* ``` for info on how to use the command.```",
+    },
     create: {
         DESCRIPTION: "Create a new group with the person replied to",
         EXTENDED_DESCRIPTION:
@@ -149,9 +155,9 @@ const data = {
         DESCRIPTION: "Get the command list and info on modules",
         EXTENDED_DESCRIPTION:
             "This module is used to get info on other modules and their triggers.",
-        HEAD: "🌀 *BotsApp Menu* 🌀\n```Use .help command for detailed info on a module.```",
+        HEAD: "🌀 *CGPT Menu* 🌀\n```Use .help command for detailed info on a module.```",
         TEMPLATE: "\n\n🤖 *Command* - ```{}```\n💡 *Info* - ```{}```",
-        COMMAND_INTERFACE: "🌀 *BotsApp Command Interface* 🌀\n\n",
+        COMMAND_INTERFACE: "🌀 *CGPT Command Interface* 🌀\n\n",
         COMMAND_INTERFACE_TEMPLATE: "💠 *Triggers -* ```{}```\n📚 *Info -* {}",
         FOOTER:
             "```\n\nClick on the button below to get a preview of the plugin.```",
@@ -201,7 +207,7 @@ const data = {
     news: {
         DESCRIPTION: "Fetch news in a mobile readable format",
         EXTENDED_DESCRIPTION:
-        "```Use this module to fetch news from a publication in mobile readable format from around 1500 publications. Enter text with the command```  *.news* .\n\nTo search for publications, use:-\n```.news search ``` _publication name_\n\nTo fetch news, use:-\n```.news fetch ``` _publication name_\n\nNews is fetched in epub format as it is more comfortable for reading in mobile devices. To read them in Android devices, you can use this application: https://play.google.com/store/apps/details?id=org.readera",
+            "```Use this module to fetch news from a publication in mobile readable format from around 1500 publications. Enter text with the command```  *.news* .\n\nTo search for publications, use:-\n```.news search ``` _publication name_\n\nTo fetch news, use:-\n```.news fetch ``` _publication name_\n\nNews is fetched in epub format as it is more comfortable for reading in mobile devices. To read them in Android devices, you can use this application: https://play.google.com/store/apps/details?id=org.readera",
         NO_COMMMAND: "```No arguments supplied. Use``` *.help news* ```for info on how to use the command.```",
         NO_PUB_NAME: "```No publication name supplied. Use``` *.help news* ```for info on how to use the command.```"
     },
