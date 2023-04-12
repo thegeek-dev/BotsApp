@@ -38,8 +38,7 @@ module.exports = {
             try {
                 await Axios.post("https://api.openai.com/v1/chat/completions", {
                     "model": "gpt-3.5-turbo",
-                    "messages": [{ "role": "user", "content": question }],
-                    "max_tokens": 100
+                    "messages": [{ "role": "user", "content": question }]
                 }, {
                     headers: {
                         'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
